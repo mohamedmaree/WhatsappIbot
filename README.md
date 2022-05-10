@@ -36,8 +36,8 @@ $response = WhatsappIbot::GetQRCode();
 ```
 
 - Get all return values from Whatsapp. Like connection status, Incoming message, Outgoing message, Disconnected, Change Battery,...
-	Params
-	webhook_url	https://webhook.site/1b25464d6833784f96eef4xxxxxxxxxx
+	- Params:
+	- webhook_url	https://webhook.site/1b25464d6833784f96eef4xxxxxxxxxx
 
 ```php
 use Maree\WhatsappIbot\WhatsappIbot;
@@ -70,9 +70,9 @@ $response = WhatsappIbot::Reconnect();
 ```
 
 - Send a text message to a phone number through the app
-	Params
-	phone_number= 2010027*****
-	message	= test message
+	- Params:
+	- phone_number= 2010027*****
+	- message	= test message
 
 ```php
 use Maree\WhatsappIbot\WhatsappIbot;
@@ -81,11 +81,11 @@ $response = WhatsappIbot::SendTextMessage($phone_number='2010027*****','maree te
 ```
 
 - Send a media or file with message to a phone number through the app
-	Params
-	number	= 2010027*****
-	message	= maree test
-	media_url = https://imgd.aeplcdn.com/0x0/n/cw/ec/41406/bmw-8-series-right-front-three-quarter8.jpeg
-	filename (Just use for send document) =	bmw.png
+	- Params:
+	- number	= 2010027*****
+	- message	= maree test
+	- media_url = https://imgd.aeplcdn.com/0x0/n/cw/ec/41406/bmw-8-series-right-front-three-quarter8.jpeg
+	- filename (Just use for send document) =	bmw.png
 
 ```php
 use Maree\WhatsappIbot\WhatsappIbot;
@@ -95,9 +95,9 @@ $response = WhatsappIbot::SendMediaMessage($number = '2010027*****',$message = '
 
 
 - Send a text message to a group through the app
-	Params
-	group_id =	2010027*****@c.us
-	message	= group message
+	- Params:
+	- group_id = 2010027*****@c.us
+	- message  = group message
 
 ```php
 use Maree\WhatsappIbot\WhatsappIbot;
@@ -106,11 +106,11 @@ $response = WhatsappIbot::SendTextMessageGroup($group_id = '2010027*****@c.us',$
 ```
 
 - Send a media or file with message to a group through the app
-	Params
-	group_id = 2010027*****@c.us
-	message	 = test message
-	media_url = https://imgd.aeplcdn.com/0x0/n/cw/ec/41406/bmw-8-series-right-front-three-quarter8.jpeg
-	filename (Just use for send document) =	bmw.png
+	- Params:
+	- group_id = 2010027*****@c.us
+	- message	 = test message
+	- media_url = https://imgd.aeplcdn.com/0x0/n/cw/ec/41406/bmw-8-series-right-front-three-quarter8.jpeg
+	- filename (Just use for send document) =	bmw.png
 
 ```php
 use Maree\WhatsappIbot\WhatsappIbot;
