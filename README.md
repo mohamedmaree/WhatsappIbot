@@ -11,7 +11,7 @@ composer require maree/whatsapp-ibot
 ```bash
 php artisan vendor:publish --provider="Maree\WhatsappIbot\WhatsappIbotServiceProvider" --tag="whatsapp"
 ```
-- then change your urway config from config/urway.php file
+- then change your WhatsappIbot config from config/whatsapp.php file
 
 ```php
     "access_token"   => "" ,
